@@ -1,0 +1,241 @@
+* {
+  margin:0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  text-align: center;
+  background: #f26522;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%
+}
+
+header nav ul li {
+  display:inline;
+}
+
+header nav a {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+header nav a:hover {
+  color: grey;
+}
+
+header nav a:active {
+  color: black;
+}
+
+.hero-image-section {
+  background-image: url('../image/homepagemain.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 200px 0;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 20px;
+
+}
+
+.our-work {
+  text-align: center;
+  margin: 100px;
+}
+
+.examples {
+    display: inline-block;
+}
+
+.examples img{
+  width: 350px;
+  height: 350px;
+  padding: 10px;
+}
+
+.services {
+  display: inline-block;
+}
+
+.services img{
+  width: 100px;
+  padding: 40px;
+}
+
+.offer {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #f26522;
+  font-size: 16px;
+  margin: 50px;
+  margin-bottom: 100px;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #f26522;
+  font-size: 34px;
+  margin: 100px
+}
+
+.contact-form {
+  background : #f26522;
+  padding: 50px;
+  width: 700px;
+  border-radius: 4px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+}
+
+.label_input_wrap {
+  display: block;
+}
+
+.submit input {
+  background: white;
+  color: black;
+  padding: 5px 20px;
+}
+
+.input-section {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 6px 60px;
+  border-radius: 3px;
+}
+
+.container {
+  width: auto;
+  margin: 0 auto;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 50px;
+    max-width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+.contact {
+  padding: 20px;
+}
+
+.about {
+  padding: 20px;
+}
+
+.about img{
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.samples {
+  padding: 20px;
+}
+
+.samples img{
+  max-width: 400px;
+}
+
+footer {
+  text-align: right;
+  padding: 20px;
+  background-color: #f26522;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+/* for overlay */
+summary {
+  padding: 20px;
+  width: 1000px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f26522;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+.containers {
+  position: relative;
+  width: 50%;
+}
+
+.containers img {
+  display: block;
+  width: 400px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 400px;
+  height: 270px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f26522;
+}
+
+.containers:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* for animation */
+.nv {
+  position: absolute;
+  top:20px;
+  left: 0px;
+  animation-name: drive;
+  animation-duration: 20s;
+  animation-delay: 0s;
+  animation-iteration-count: 3;
+}
+
+@keyframes drive {
+  from{
+    transform: translateX(350px);
+    }
+    to {
+        transform: translateX(900px);
+    }
+}

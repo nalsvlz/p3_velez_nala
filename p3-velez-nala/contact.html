@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-30K0T9VZ8W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-30K0T9VZ8W');
+  </script>
+    <meta charset="utf-8">
+
+    <meta name="keywords" content="graphic design"/>
+    <meta name="description" content="Stand out from the rest with NV Design Agency" />
+    <title> NV Design Agency </title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="our-work.html">Our Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+        <div class="contact">
+          <h2>Contact us</h2>
+          <p>Contact us for a free quote and to learn more about what we can do for YOU!</p>
+        <form class="contact-form" id="test_form" name="test_form" method="" action="form.php" onsubmit="return validateForm(this)">
+          <div class="first-name input-section">
+            <label for="firstname" class="label_input_wrap">First Name:
+            </label>
+            <input type="text" name="firstname" id="firstname" placeholder="ex. john" />
+          </div>
+
+          <div class="last-name input-section">
+            <label for="lastname" class="label_input_wrap">Last Name:
+            </label>
+            <input type="text" name="lastname" id="lastname" placeholder="ex. Smith" />
+          </div>
+
+          <div class="email input-section">
+            <label for="email" class="label_input_wrap">EMAIL:
+            </label>
+            <input type="email" name="email" id="email" placeholder="ex. jSmith@example.com" />
+          </div>
+
+          <div class="telephone input-section">
+            <label for="telephone" class="label_input_wrap">Telephone:
+            </label>
+            <input type="tel" name="telephone" id="telephone" placeholder="ex. 444-444-4444" />
+          </div>
+
+          <div class="comments input-section">
+            <label for="comments" class="label_input_wrap">Comments:
+            </label>
+            <textarea name="comments" id="comments" rows="5" cols="55" placeholder="Your Comment Goes Here"></textarea>
+          </div>
+
+          <div class="submit input-section">
+            <input type="submit" value="Send me a message!"/>
+          </div>
+        </form>
+      </div>
+    </main>
+
+  </body>
+</html>
